@@ -1,0 +1,60 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    padding: 8px;
+    margin: 16px auto;
+    background-color: #EFE4D2;
+    text-align: center
+}
+
+.card-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 48px;
+    padding: 8px;
+    margin: 8px 16px;
+}
+
+.recipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55px;
+    margin: 8px;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+#recipe-1 {
+    background-color: #254D70;
+}
+
+#recipe-2 {
+    background-color: #131D4F
+}
+
+#recipe-3 {
+    background-color: #954C2E
+}
+
+.recipe a:link,
+.recipe a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.recipe a:hover,
+.recipe a:active {
+    color: gray;
+}
