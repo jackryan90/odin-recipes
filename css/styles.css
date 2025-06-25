@@ -1,11 +1,16 @@
 html {
     box-sizing: border-box;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
 }
 
 *,
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+body {
+    margin: 32px;
 }
 
 .card {
@@ -18,8 +23,7 @@ html {
 }
 
 .card-title {
-    font-family: 'Times New Roman', serif;
-    font-size: 48px;
+    font-size: 42px;
     padding: 8px;
     margin: 8px 16px;
 }
@@ -31,7 +35,6 @@ html {
     flex-direction: column;
     height: 55px;
     margin: 8px;
-    font-family: Georgia, serif;
     font-size: 24px;
     text-align: center;
 }
@@ -57,4 +60,63 @@ html {
 .recipe a:hover,
 .recipe a:active {
     color: gray;
+}
+
+.home-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 150px;
+    height: 40px;
+    border: 1px solid lightgray;
+    font-size: 18px;
+    text-align: center;
+}
+
+.home-button a:link,
+.home-button a:visited {
+    color: gray;
+    text-decoration: none;
+}
+
+.home-button a:hover,
+.home-button a:active {
+    color: #954C2E;
+}
+
+.recipe-title {
+    font-size:36px;
+}
+
+.recipe-image {
+    width: 800px;
+    height: auto;
+}
+
+.description-header {
+    font-size: 24px;
+}
+
+.description {
+    width: 800px;
+    height: auto;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.recipe-card {
+    width: 800px;
+    height: auto;
+    margin: 0px;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.recipe-card h2,
+.recipe-card ul li,
+.recipe-card ol li,
+.recipe-card p {
+    font-size: 14px
 }
